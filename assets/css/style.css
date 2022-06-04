@@ -1,0 +1,148 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+img {
+  height: 24rem;
+  width: 18rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "buscador "
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 10% 70% 10%;
+  height: 100vh;
+}
+.item1 {
+  grid-area: navbar;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.position {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.none1 {
+  display: none;
+}
+.none2 {
+  display: none;
+}
+.item2 {
+  grid-area: buscador;
+  background-color: #f7f3f30a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p-select {
+  padding: 3%;
+}
+select {
+  width: 75%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: solid;
+  border-radius: 10px;
+}
+
+.item3 {
+  grid-area: main;
+}
+.card-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+}
+
+.item4 {
+  grid-area: footer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.icons-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+.separation {
+  margin-left: 1%;
+}
+.align {
+  text-align: center;
+  margin-top: 1%;
+}
+@media (min-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "navbar buscador"
+      "navbar main"
+      "footer main";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10% 80% 10%;
+    height: 100vh;
+  }
+  .p-select {
+    padding: 0;
+  }
+  .position {
+    padding-top: 3%;
+    font-size: 122%;
+  }
+  .son-card {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .son-card1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .item3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-mobile {
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    height: 17rem;
+    width: 18rem;
+  }
+  .pagination {
+    margin-top: 4%;
+  }
+  .none1 {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 3%;
+  }
+  .none2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
