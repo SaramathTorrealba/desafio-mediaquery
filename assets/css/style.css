@@ -15,7 +15,7 @@ img {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 10% 70% 10%;
+  grid-template-rows: 7% 10% 70% 10%;
   height: 100vh;
 }
 .item1 {
@@ -124,8 +124,8 @@ a {
   }
 
   img {
-    height: 17rem;
-    width: 18rem;
+    height: 21rem;
+    width: 19rem;
   }
   .pagination {
     margin-top: 4%;
@@ -144,5 +144,9 @@ a {
     margin-top: 3%;
     flex-direction: column;
     align-items: center;
+  }
+  button{
+    width: 24%;
+    margin: 3%;
   }
 }
